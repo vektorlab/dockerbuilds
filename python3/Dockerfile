@@ -16,3 +16,5 @@ RUN curl -ksSL -o python3.tgz https://www.python.org/ftp/python/$PYTHON3_VERSION
     && ldconfig \
     && cd / \
     && rm -rf /python3
+
+CMD python3
