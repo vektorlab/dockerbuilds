@@ -1,4 +1,4 @@
-FROM quay.io/vektorlab/base:latest
+FROM vektorlab/base:latest
 
 RUN apk add --update nginx && \
     mkdir -p /var/cache/nginx /var/log/nginx && \

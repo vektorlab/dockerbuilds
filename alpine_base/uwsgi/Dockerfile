@@ -1,4 +1,4 @@
-FROM quay.io/vektorlab/python2:latest
+FROM vektorlab/python2:latest
 
 RUN apk add --update uwsgi uwsgi-python
     pip install uwsgi
