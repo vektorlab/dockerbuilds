@@ -1,7 +1,8 @@
 FROM vektorlab/python2:latest
 
-RUN apk add --update uwsgi uwsgi-python
-    pip install uwsgi
+RUN apk add --update gcc musl-dev uwsgi uwsgi-python && \
+    pip install uwsgi && \
+    apk del gcc musl-dev
 
 COPY uwsgi.ini /uwsgi.ini
 

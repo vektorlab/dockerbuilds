@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM alpine:3.3
 
 ENV DUMB_INIT_VERSION 1.0.0
 
