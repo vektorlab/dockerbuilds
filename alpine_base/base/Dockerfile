@@ -9,6 +9,3 @@ RUN apk add --update wget tar ca-certificates gcc musl musl-dev make && \
     cd dumb-init-${DUMB_INIT_VERSION} && \
     make && mv -v dumb-init /bin/ && \
     apk del musl-dev gcc make
-
-#install some common packages
-RUN apk add --update wget curl bash tar ca-certificates
