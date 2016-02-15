@@ -1,4 +1,4 @@
-FROM vektorlab:base
+FROM vektorlab/base:latest
 
 RUN apk --update --no-cache add openjdk7-jre bash wget curl ttf-dejavu openssh
 
