@@ -1,3 +1,3 @@
-# Dockerbuilds
+# centos images
 
-Collection of minimal Docker image builds based on Alpine Linux
+Builds based on Centos 7
