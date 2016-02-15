@@ -1,0 +1,17 @@
+FROM quay.io/vektorlab/python:2
+
+COPY requirements.txt /requirements.txt
+
+RUN apk add --update make flex gcc g++ libc-dev perl && \ #deps for compiling pip packages
+    pip install --trusted-host devpi.thirdpartytrust.com -r /requirements.txt && \
+    wget http://www.dwheeler.com/sloccount/sloccount-2.26.tar.gz -qO - | tar zxvf - -C /tmp && \
+    cd /tmp/sloccount-* && \
+    make && make install && \
+    rm -f /var/cache/apk/*
+
+COPY unittestlib /usr/local/src/unittestlib
+RUN cd /usr/local/src/unittestlib && \
+    python setup.py install
+
+COPY run_tests.sh /run_tests
+RUN chmod +x /run_tests

@@ -1,0 +1,19 @@
+FROM docker.thirdpartytrust.com/core/base:latest
+
+ENV GEM_PATH /opt/synapse
+
+RUN mkdir -p $GEM_PATH && \
+    apk add --update haproxy libxml2-dev zlib-dev ruby ruby-dev git make gcc-objc && \
+    git clone https://github.com/bcicen/synapse.git $GEM_PATH &&  cd $GEM_PATH && \
+    git checkout -b docker-only && \
+    gem build synapse.gemspec && \
+    gem install synapse-*.gem --install-dir $GEM_PATH --no-ri --no-rdoc && \
+    apk del git make gcc-objc && \
+    rm -f /var/cache/apk/*
+
+COPY entrypoint.sh /entrypoint.sh
+COPY synapse.conf.json /etc/synapse.conf.json
+
+EXPOSE 7000-7100 8080 3212
+
+CMD /bin/bash entrypoint.sh

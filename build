@@ -1,0 +1,27 @@
+#!/bin/bash -e
+
+output() {
+  echo "[build]: $@"
+}
+
+[ $# != 1 ] && {
+  echo "usage ./build /path/"
+	exit 1
+}
+
+path=$1
+[ ! -d $path ] && {
+  echo "no such directory"
+}
+
+cd $path
+image_name=${PWD##*/}
+full_image_name="quay.io/vektorlab/${image_name}:latest"
+output "building $full_image_name"
+
+docker build --rm=true -t ${full_image_name} .
+if [ -z "${DOCKER_NO_PUSH}" ]; then
+    docker push $full_image_name
+fi
+
+output "done"

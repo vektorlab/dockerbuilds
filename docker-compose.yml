@@ -1,0 +1,3 @@
+test:
+  image: alpine:latest
+  command: echo ${TEST_VAR} 
