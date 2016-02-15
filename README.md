@@ -1,3 +1,3 @@
-# centos images
+# debian images
 
-Builds based on Centos 7
+Builds based on Debian Jessie
