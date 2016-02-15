@@ -1,4 +1,4 @@
-FROM docker.thirdpartytrust.com/core/base:latest
+FROM vektorlab/glibc:latest
 
 ENV NGINX_VERSION 1.6.3
 
