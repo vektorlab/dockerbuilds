@@ -24,6 +24,9 @@ def ensuredir(dirname):
     except (etcd.EtcdKeyNotFound, KeyError):
         client.write(dirname, None, dir=True)
 
+base_dir = "/backends"
+ensuredir(base_dir)
+
 {{ $local := . }}
 {{range $key, $value := .}}
 {{ $addrLen := len $value.Addresses }}
@@ -38,19 +41,18 @@ else:
 	image_name = "{{ $value.Image.Repository }}"
 image_tag = "{{ $value.Image.Tag }}"
 
-base_dir = "/backends"
 image_dir = "%s/%s" % (base_dir, image_name)
 tag_dir = "%s/%s" % (image_dir, image_tag)
 
-ensuredir(base_dir)
 ensuredir(image_dir)
 ensuredir(tag_dir)
 
-container_id = "/{{printf "%.*s" 12 $value.ID}}"
+#container_id = "{{printf "%.*s" 12 $value.ID}}"
+container_id = "{{ $value.ID }}"
 key_path = "%s/%s" % (tag_dir, container_id)
 
 print("registering %s" % key_path)
-client.write(key_path, "{{ $local.Env.HOST_IP }}:{{ $address.HostPort }}", ttl=15)
+client.write(key_path, "{{ $address.HostIP }}:{{ $address.HostPort }}", ttl=15)
 #client.write("/backends/{{ $value.Image.Repository}}/port", "{{ $address.Port }}", ttl=15)
 
 {{ end }}
