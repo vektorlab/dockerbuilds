@@ -1,6 +1,6 @@
 FROM vektorlab/glibc:latest
 
-RUN apk add --no-cache --update curl bzip2 libbz2 libffi ncurses5-libs libgcrypt expat
+RUN apk add --no-cache curl bzip2 libbz2 libffi ncurses5-libs libgcrypt expat
 #RUN apk add openblas openblas-dev --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 
 ENV PYPY_PORTABLE pypy-4.0.1-linux_x86_64-portable

@@ -1,6 +1,6 @@
 FROM vektorlab/python3:latest
 
-RUN apk add --no-cache --update g++ libstdc++ python3-dev && \
+RUN apk add --no-cache g++ libstdc++ python3-dev && \
     pip install jupyter && \
     apk del g++ python3-dev
 

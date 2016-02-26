@@ -2,7 +2,7 @@ FROM vektorlab/base:latest
 
 ENV KIBANA_VERSION 4.4.1
 
-RUN apk add --update --no-cache nodejs && \
+RUN apk add --no-cache nodejs && \
     wget -q https://download.elastic.co/kibana/kibana/kibana-${KIBANA_VERSION}-linux-x64.tar.gz && \
     tar zxf kibana-${KIBANA_VERSION}-linux-x64.tar.gz && mv kibana-${KIBANA_VERSION}-linux-x64 /kibana && \
     rm /kibana/node/bin/node /kibana/node/bin/npm && \

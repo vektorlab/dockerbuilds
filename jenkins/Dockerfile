@@ -1,6 +1,6 @@
 FROM vektorlab/base:latest
 
-RUN apk --update --no-cache add openjdk7-jre bash wget curl ttf-dejavu openssh
+RUN apk --no-cache add openjdk7-jre bash wget curl ttf-dejavu openssh
 
 ENV JENKINS_VERSION latest
 ENV JENKINS_HOME /jenkins

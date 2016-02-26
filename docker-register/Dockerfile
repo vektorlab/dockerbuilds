@@ -4,7 +4,7 @@ ENV DOCKER_HOST unix:///var/run/docker.sock
 ENV DOCKERGEN_VERSION 0.6.0
 
 COPY requirements.txt /requirements.txt
-RUN apk add --no-cache --update libffi-dev openssl-dev && \
+RUN apk add --no-cache libffi-dev openssl-dev && \
     pip install -r /requirements.txt
 
 RUN cd /tmp/ && \

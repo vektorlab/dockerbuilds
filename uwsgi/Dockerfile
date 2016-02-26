@@ -1,6 +1,6 @@
 FROM vektorlab/python2:latest
 
-RUN apk add --update gcc musl-dev uwsgi uwsgi-python && \
+RUN apk add --no-cache gcc musl-dev uwsgi uwsgi-python && \
     pip install uwsgi && \
     apk del gcc musl-dev
 

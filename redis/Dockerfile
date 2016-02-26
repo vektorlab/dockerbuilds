@@ -1,6 +1,6 @@
 FROM vektorlab/base:latest
 
-RUN apk add --update redis && \
+RUN apk add --no-cache redis && \
     mkdir /data && chown redis:redis /data
 
 VOLUME /data

@@ -1,3 +1,3 @@
 FROM alpine:3.3
 
-RUN apk add --update --no-cache ca-certificates
+RUN apk add --no-cache ca-certificates
