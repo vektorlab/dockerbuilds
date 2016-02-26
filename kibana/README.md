@@ -1,5 +1,7 @@
 # kibana
 
+Alpine-based Kibana image
+
 ## Usage
 
 ```bash

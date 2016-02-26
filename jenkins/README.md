@@ -1,3 +1,3 @@
 # jenkins
 
-Minimal Jenkins Docker
+Alpine-base Jenkins image
