@@ -1,5 +1,4 @@
 FROM vektorlab/base:latest
 
 RUN apk add --no-cache python3 && \
-    wget -q "https://bootstrap.pypa.io/get-pip.py" -O /dev/stdout | python3 && \
-    apk del build-dependencies
+    wget -q "https://bootstrap.pypa.io/get-pip.py" -O /dev/stdout | python3
