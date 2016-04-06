@@ -58,3 +58,15 @@
 [submodule "php-fpm"]
 	path = php-fpm
 	url = git@github.com:vektorcloud/php-fpm.git
+[submodule "apk-cache"]
+	path = apk-cache
+	url = git@github.com:vektorcloud/apk-cache.git
+[submodule "mesos"]
+	path = mesos
+	url = git@github.com:vektorcloud/mesos.git
+[submodule "elasticsearch"]
+	path = elasticsearch
+	url = git@github.com:vektorcloud/elasticsearch.git
+[submodule "oracle-jre"]
+	path = oracle-jre
+	url = git@github.com:vektorcloud/oracle-jre.git
