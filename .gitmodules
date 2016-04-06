@@ -1,0 +1,60 @@
+[submodule "ansible"]
+	path = ansible
+	url = git@github.com:vektorcloud/ansible.git
+[submodule "base"]
+	path = base
+	url = git@github.com:vektorcloud/base.git
+[submodule "dnsmasq"]
+	path = dnsmasq
+	url = git@github.com:vektorcloud/dnsmasq.git
+[submodule "docker-gen"]
+	path = docker-gen
+	url = git@github.com:vektorcloud/docker-gen.git
+[submodule "docker-register"]
+	path = docker-register
+	url = git@github.com:vektorcloud/docker-register.git
+[submodule "dumb-init"]
+	path = dumb-init
+	url = git@github.com:vektorcloud/dumb-init.git
+[submodule "etcd"]
+	path = etcd
+	url = git@github.com:vektorcloud/etcd.git
+[submodule "glibc"]
+	path = glibc
+	url = git@github.com:vektorcloud/glibc.git
+[submodule "go"]
+	path = go
+	url = git@github.com:vektorcloud/go.git
+[submodule "handwarmer"]
+	path = handwarmer
+	url = git@github.com:vektorcloud/handwarmer.git
+[submodule "jenkins"]
+	path = jenkins
+	url = git@github.com:vektorcloud/jenkins.git
+[submodule "jupyter"]
+	path = jupyter
+	url = git@github.com:vektorcloud/jupyter.git
+[submodule "kibana"]
+	path = kibana
+	url = git@github.com:vektorcloud/kibana.git
+[submodule "nginx"]
+	path = nginx
+	url = git@github.com:vektorcloud/nginx.git
+[submodule "python2"]
+	path = python2
+	url = git@github.com:vektorcloud/python2.git
+[submodule "python3"]
+	path = python3
+	url = git@github.com:vektorcloud/python3.git
+[submodule "redis"]
+	path = redis
+	url = git@github.com:vektorcloud/redis.git
+[submodule "ruby"]
+	path = ruby
+	url = git@github.com:vektorcloud/ruby.git
+[submodule "uwsgi"]
+	path = uwsgi
+	url = git@github.com:vektorcloud/uwsgi.git
+[submodule "php-fpm"]
+	path = php-fpm
+	url = git@github.com:vektorcloud/php-fpm.git
