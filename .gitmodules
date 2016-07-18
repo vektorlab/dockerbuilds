@@ -1,78 +1,103 @@
 [submodule "ansible"]
 	path = ansible
 	url = git@github.com:vektorcloud/ansible.git
+	branch = master
 [submodule "base"]
 	path = base
 	url = git@github.com:vektorcloud/base.git
+	branch = master
 [submodule "dnsmasq"]
 	path = dnsmasq
 	url = git@github.com:vektorcloud/dnsmasq.git
+	branch = master
 [submodule "docker-gen"]
 	path = docker-gen
 	url = git@github.com:vektorcloud/docker-gen.git
+	branch = master
 [submodule "docker-register"]
 	path = docker-register
 	url = git@github.com:vektorcloud/docker-register.git
+	branch = master
 [submodule "dumb-init"]
 	path = dumb-init
 	url = git@github.com:vektorcloud/dumb-init.git
+	branch = master
 [submodule "etcd"]
 	path = etcd
 	url = git@github.com:vektorcloud/etcd.git
+	branch = master
 [submodule "glibc"]
 	path = glibc
 	url = git@github.com:vektorcloud/glibc.git
+	branch = master
 [submodule "go"]
 	path = go
 	url = git@github.com:vektorcloud/go.git
+	branch = master
 [submodule "handwarmer"]
 	path = handwarmer
 	url = git@github.com:vektorcloud/handwarmer.git
+	branch = master
 [submodule "jenkins"]
 	path = jenkins
 	url = git@github.com:vektorcloud/jenkins.git
+	branch = master
 [submodule "jupyter"]
 	path = jupyter
 	url = git@github.com:vektorcloud/jupyter.git
+	branch = master
 [submodule "kibana"]
 	path = kibana
 	url = git@github.com:vektorcloud/kibana.git
+	branch = master
 [submodule "nginx"]
 	path = nginx
 	url = git@github.com:vektorcloud/nginx.git
+	branch = master
 [submodule "python2"]
 	path = python2
 	url = git@github.com:vektorcloud/python2.git
+	branch = master
 [submodule "python3"]
 	path = python3
 	url = git@github.com:vektorcloud/python3.git
+	branch = master
 [submodule "redis"]
 	path = redis
 	url = git@github.com:vektorcloud/redis.git
+	branch = master
 [submodule "ruby"]
 	path = ruby
 	url = git@github.com:vektorcloud/ruby.git
+	branch = master
 [submodule "uwsgi"]
 	path = uwsgi
 	url = git@github.com:vektorcloud/uwsgi.git
+	branch = master
 [submodule "php-fpm"]
 	path = php-fpm
 	url = git@github.com:vektorcloud/php-fpm.git
+	branch = master
 [submodule "apk-cache"]
 	path = apk-cache
 	url = git@github.com:vektorcloud/apk-cache.git
+	branch = master
 [submodule "mesos"]
 	path = mesos
 	url = git@github.com:vektorcloud/mesos.git
+	branch = master
 [submodule "elasticsearch"]
 	path = elasticsearch
 	url = git@github.com:vektorcloud/elasticsearch.git
+	branch = master
 [submodule "oracle-jre"]
 	path = oracle-jre
 	url = git@github.com:vektorcloud/oracle-jre.git
+	branch = master
 [submodule "nodejs"]
 	path = nodejs
 	url = git@github.com:vektorcloud/nodejs.git
+	branch = master
 [submodule "varnish"]
 	path = varnish
 	url = git@github.com:vektorcloud/varnish.git
