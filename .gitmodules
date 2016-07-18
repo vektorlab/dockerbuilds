@@ -73,3 +73,19 @@
 [submodule "nodejs"]
 	path = nodejs
 	url = git@github.com:vektorcloud/nodejs.git
+[submodule "varnish"]
+	path = varnish
+	url = git@github.com:vektorcloud/varnish.git
+	branch = master
+[submodule "maven"]
+	path = maven
+	url = git@github.com:vektorcloud/maven.git
+	branch = master
+[submodule "sniproxy"]
+	path = sniproxy
+	url = git@github.com:vektorcloud/sniproxy.git
+	branch = master
+[submodule "phppgadmin"]
+	path = phppgadmin
+	url = git@github.com:vektorcloud/phppgadmin.git
+	branch = master
